@@ -53,6 +53,9 @@ main {
 .page-heading {
   font-family: "Encode Sans SC", sans-serif;
 }
+.article-heading {
+  font-family: "Encode Sans SC", sans-serif;
+}
 .main-nav a {
   margin: 0 0.125rem 0 0.125rem;
   padding: 0 2rem 0 2rem;
@@ -115,6 +118,7 @@ GRID
     grid-row: span 2;
   }
   .grid-heading {
+    font-size: 0.7rem;
     border-bottom: 4px dotted var(--red);
   }
   .games {
@@ -135,6 +139,7 @@ GRID
     margin-bottom: 0;
   }
   .content-article {
+    width: 100%;
     margin: 0.5rem 0 0.5rem 0;
     padding: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
@@ -147,12 +152,17 @@ GRID
       #12171a 8px
     );
   }
+  .nw {
+    width: 80%;
+    margin: 2rem 2rem 2rem 0rem;
+  }
   .heading-wrapper {
     display: flex;
     justify-content: space-between;
   }
   .article-heading {
     margin-top: 0;
+    font-size: 1rem;
   }
   .news-date {
     text-align: right;
