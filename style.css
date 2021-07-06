@@ -50,6 +50,9 @@ main {
   display: inline-block;
   padding: 0 2rem 0 2.5rem;
 }
+.page-heading {
+  font-family: "Encode Sans SC", sans-serif;
+}
 .main-nav a {
   margin: 0 0.125rem 0 0.125rem;
   padding: 0 2rem 0 2rem;
@@ -114,6 +117,19 @@ GRID
   .grid-heading {
     border-bottom: 4px dotted var(--red);
   }
+  .games {
+    border-bottom: 4px dotted var(--red);
+  }
+  .news {
+    border-bottom: 4px dotted var(--yellow);
+  }
+  .network {
+    border-bottom: 4px dotted var(--green);
+  }
+  .about {
+    border-bottom: 4px dotted var(--blue);
+  }
+
   .page-heading {
     padding-top: 1rem;
     margin-bottom: 0;
@@ -131,8 +147,17 @@ GRID
       #12171a 8px
     );
   }
+  .heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
   .article-heading {
     margin-top: 0;
+  }
+  .news-date {
+    text-align: right;
+    margin-top: 0;
+    font-size: 0.8rem;
   }
   .content-wrapper {
     display: flex;
