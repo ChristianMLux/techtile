@@ -10,19 +10,65 @@ html {
 body {
   --bg-dark-color: #121212;
   --white: snow;
-  --red: #ba3d3b;
+  --red: #c91d1d;
   --yellow: #fde635;
   --blue: #49b9e9;
   --green: #93bc38;
   --highlight-dark: #f49c5c;
   --highlight-light: #fdc67b;
   margin: 0;
-  background-color: var(--bg-dark-color);
+  _background-color: var(--bg-dark-color);
+  background: repeating-linear-gradient(
+    70deg,
+    #141a1d,
+    #141a1d 0.5px,
+    #1b2327 0.5px,
+    #1b2327 8px
+  );
   color: var(--white);
 }
 main {
   margin: 0 auto;
   max-width: 90ch;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  _background-color: var(--blue);
+}
+.main-header-wrapper {
+}
+.main-nav {
+  display: inline-block;
+  padding: 0 2.5rem 0 2.5rem;
+}
+.main-heading {
+  margin: 0;
+  display: inline-block;
+  padding: 0 2.5rem 0 2.5rem;
+}
+.main-nav a {
+  margin: 0 0.125rem 0 0.125rem;
+  padding: 0 2.5rem 0 2.5rem;
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--white);
+  text-decoration-thickness: 0.25rem;
+}
+.a-games {
+  text-decoration-color: var(--red);
+}
+.a-news {
+  text-decoration-color: var(--yellow);
+}
+.a-network {
+  text-decoration-color: var(--green);
+}
+.a-about {
+  text-decoration-color: var(--blue);
 }
 
 /*
