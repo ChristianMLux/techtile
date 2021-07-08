@@ -121,6 +121,7 @@ GRID
   }
   .grid-heading {
     margin-top: 0.8rem;
+    margin-right: 1rem;
   }
   .games {
     border-bottom: 4px dotted var(--red);
