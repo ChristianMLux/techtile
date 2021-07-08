@@ -102,15 +102,37 @@ GRID
   }
   .main-header {
     justify-content: flex-start;
-    padding-left: 0.7rem;
+    padding: 0rem;
+  }
+  .main-heading {
+    padding-left: 10%;
   }
   .main-nav {
-    padding: 0.5rem 0rem 0.5rem 1rem;
+    margin-top: 0.5rem;
+    padding-left: 10%;
     display: flex;
     flex-flow: column;
   }
   .main-nav a {
-    padding: 0.25rem 0 0.25rem 1.3rem;
+    padding: 0.25rem 2rem 0.25rem 0;
+  }
+  .content-paragraph {
+    padding-right: 0.5rem;
+  }
+  .grid-heading {
+    margin-top: 0.8rem;
+  }
+  .games {
+    border-bottom: 4px dotted var(--red);
+  }
+  .news {
+    border-bottom: 4px dotted var(--yellow);
+  }
+  .network {
+    border-bottom: 4px dotted var(--green);
+  }
+  .about {
+    border-bottom: 4px dotted var(--blue);
   }
 }
 @media screen and (max-width: 857px) {
@@ -141,6 +163,18 @@ GRID
     width: 90%;
     height: 90%;
     padding: 0.5rem 0 0 0;
+  }
+  .games {
+    border-bottom: 4px dotted var(--red);
+  }
+  .news {
+    border-bottom: 4px dotted var(--yellow);
+  }
+  .network {
+    border-bottom: 4px dotted var(--green);
+  }
+  .about {
+    border-bottom: 4px dotted var(--blue);
   }
 }
 @media screen and (min-width: 858px) {
