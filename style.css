@@ -92,9 +92,55 @@ GRID
   display: flex;
   align-items: flex-start;
 }
+
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 14px;
+  }
+  .page-heading {
+    font-size: 1.2rem;
+  }
+  .main-header {
+    justify-content: flex-start;
+    padding-left: 0.7rem;
+  }
+  .main-nav {
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    display: flex;
+    flex-flow: column;
+  }
+  .main-nav a {
+    padding: 0.25rem 0 0.25rem 1.3rem;
+  }
+}
 @media screen and (max-width: 857px) {
   html {
     font-size: 16px;
+  }
+  .grid-layout {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .grid-heading {
+    grid-column: 1/-1;
+    grid-row: span 1;
+  }
+  .grid-content {
+    grid-column: 1/-1;
+    grid-row: span 2;
+    flex-flow: column;
+  }
+  .grid-footer {
+    grid-column: 1/-1;
+    grid-row: span 2;
+  }
+  .grid-heading {
+    font-size: 0.7rem;
+    border-bottom: 4px dotted var(--red);
+  }
+  .content-left > img {
+    width: 90%;
+    height: 90%;
+    padding: 0.5rem 0 0 0;
   }
 }
 @media screen and (min-width: 858px) {
